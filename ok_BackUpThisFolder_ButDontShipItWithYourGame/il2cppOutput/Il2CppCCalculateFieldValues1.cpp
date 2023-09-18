@@ -18349,10 +18349,16 @@ struct MicrosoftMotionControllerProfile_t53D1023E3C1D2813F704A2EF57F7F980FD558F0
 // Movement
 struct Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.Rigidbody Movement::rb
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb_4;
+	// UnityEngine.Collider Movement::other
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___other_5;
 	// System.Int32 Movement::up_force
-	int32_t ___up_force_4;
+	int32_t ___up_force_6;
 	// System.Int32 Movement::down_force
-	int32_t ___down_force_5;
+	int32_t ___down_force_7;
+	// System.Int32 Movement::up
+	int32_t ___up_8;
 };
 
 // Unity.XR.Oculus.OculusLoader
@@ -24036,9 +24042,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4861[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4862[2] = 
 {
 	static_cast<int32_t>(offsetof(Hole_t3F111FB869C0466E0502297DE92CDFD0F0A010F3, ___start_4)),static_cast<int32_t>(offsetof(Hole_t3F111FB869C0466E0502297DE92CDFD0F0A010F3, ___pointValue_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4863[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4863[5] = 
 {
-	static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___up_force_4)),static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___down_force_5)),};
+	static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___rb_4)),static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___other_5)),static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___up_force_6)),static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___down_force_7)),static_cast<int32_t>(offsetof(Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7, ___up_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4864[8] = 
 {
 	static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___points_4)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___strokeText_5)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___winText_6)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___numberOfBalls_7)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___ballsRemaining_8)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___ballSpawn_9)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___club_10)),static_cast<int32_t>(offsetof(StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F, ___ball_11)),};

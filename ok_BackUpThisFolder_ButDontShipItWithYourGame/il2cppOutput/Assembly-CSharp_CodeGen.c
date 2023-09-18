@@ -54,25 +54,27 @@ extern void Hole_OnCollisionEnter_m50D041CAC875D5F2F59A29FC023DCDD52D2B95BA (voi
 extern void Hole_EndLevel_mFE18B4916E42AE8355E3EEB81AE4933C010D245C (void);
 // 0x00000015 System.Void Hole::.ctor()
 extern void Hole__ctor_m464EC6EBCA819D563170896F40B198C5D638AED9 (void);
-// 0x00000016 System.Void Movement::Start()
-extern void Movement_Start_m3D09153FD03F06C31BBD151C21BA361EA49FA72B (void);
-// 0x00000017 System.Void Movement::Update()
-extern void Movement_Update_m4B99F519DF0A29B476F90FE4314A770CD53EC418 (void);
-// 0x00000018 System.Void Movement::.ctor()
+// 0x00000016 System.Void Movement::FixedUpdate()
+extern void Movement_FixedUpdate_mBAFAFB0C3B305F3F3FCDE7E0AE3B61C89E84B6CC (void);
+// 0x00000017 System.Void Movement::OnTriggerEnter(UnityEngine.Collider)
+extern void Movement_OnTriggerEnter_m074C485AE6643EE2828A2D67A3DD0FADB788704C (void);
+// 0x00000018 System.Void Movement::Moving()
+extern void Movement_Moving_mAC413228BED43BF14FC15A8DA2E82CA81BE4FCDB (void);
+// 0x00000019 System.Void Movement::.ctor()
 extern void Movement__ctor_mCB72C1AD57256D73959D74FB86C5D0AA69EAE7ED (void);
-// 0x00000019 System.Void StartPoint::Start()
+// 0x0000001A System.Void StartPoint::Start()
 extern void StartPoint_Start_m54C3B56FDBD6886519A3A55F7A3DFCAC3C414740 (void);
-// 0x0000001A System.Void StartPoint::Update()
+// 0x0000001B System.Void StartPoint::Update()
 extern void StartPoint_Update_mF301DBE9363D3042D7141889CA4C02E87B4DE11A (void);
-// 0x0000001B System.Void StartPoint::LoadBalls(System.Int32)
+// 0x0000001C System.Void StartPoint::LoadBalls(System.Int32)
 extern void StartPoint_LoadBalls_mFDC48DF5207AF6EB5FDA64524CD5F08D6420C40C (void);
-// 0x0000001C System.Void StartPoint::SetStrokeText()
+// 0x0000001D System.Void StartPoint::SetStrokeText()
 extern void StartPoint_SetStrokeText_m6F52C18269C02DF26ED413953DFB52EAFC8BACAC (void);
-// 0x0000001D System.Void StartPoint::LoadNewGame()
+// 0x0000001E System.Void StartPoint::LoadNewGame()
 extern void StartPoint_LoadNewGame_mD5DE95E3CDAA192C457811090A71F207B7910AAD (void);
-// 0x0000001E System.Void StartPoint::.ctor()
+// 0x0000001F System.Void StartPoint::.ctor()
 extern void StartPoint__ctor_mB15A8616EF9FE731A2CE0FEE856008CE22F8B7E1 (void);
-static Il2CppMethodPointer s_methodPointers[30] = 
+static Il2CppMethodPointer s_methodPointers[31] = 
 {
 	BallManager_Start_mB1A98EDCE49D1A7F6EDF890D8E3A8BB343A8F9BD,
 	BallManager_MoveToBall_m8AC830E08B4ED0BDD29A028FA1F0578D8E018E27,
@@ -95,8 +97,9 @@ static Il2CppMethodPointer s_methodPointers[30] =
 	Hole_OnCollisionEnter_m50D041CAC875D5F2F59A29FC023DCDD52D2B95BA,
 	Hole_EndLevel_mFE18B4916E42AE8355E3EEB81AE4933C010D245C,
 	Hole__ctor_m464EC6EBCA819D563170896F40B198C5D638AED9,
-	Movement_Start_m3D09153FD03F06C31BBD151C21BA361EA49FA72B,
-	Movement_Update_m4B99F519DF0A29B476F90FE4314A770CD53EC418,
+	Movement_FixedUpdate_mBAFAFB0C3B305F3F3FCDE7E0AE3B61C89E84B6CC,
+	Movement_OnTriggerEnter_m074C485AE6643EE2828A2D67A3DD0FADB788704C,
+	Movement_Moving_mAC413228BED43BF14FC15A8DA2E82CA81BE4FCDB,
 	Movement__ctor_mCB72C1AD57256D73959D74FB86C5D0AA69EAE7ED,
 	StartPoint_Start_m54C3B56FDBD6886519A3A55F7A3DFCAC3C414740,
 	StartPoint_Update_mF301DBE9363D3042D7141889CA4C02E87B4DE11A,
@@ -105,7 +108,7 @@ static Il2CppMethodPointer s_methodPointers[30] =
 	StartPoint_LoadNewGame_mD5DE95E3CDAA192C457811090A71F207B7910AAD,
 	StartPoint__ctor_mB15A8616EF9FE731A2CE0FEE856008CE22F8B7E1,
 };
-static const int32_t s_InvokerIndices[30] = 
+static const int32_t s_InvokerIndices[31] = 
 {
 	5436,
 	5436,
@@ -129,6 +132,7 @@ static const int32_t s_InvokerIndices[30] =
 	5436,
 	5436,
 	5436,
+	4300,
 	5436,
 	5436,
 	5436,
@@ -142,7 +146,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	30,
+	31,
 	s_methodPointers,
 	0,
 	NULL,

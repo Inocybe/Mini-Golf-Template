@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ball
-  - Top Colider
-  - Bottom Colider
+  - Collider
   layers:
   - Default
   - TransparentFX

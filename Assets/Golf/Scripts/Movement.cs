@@ -5,23 +5,23 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public Rigidbody rb;
+    public Collider other;
 
     public int up_force;
     public int down_force;
 
     private int up = 1;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
 
         Moving();
+        OnTriggerEnter(other);
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        up *= -1;
     }
 
     public void Moving()
@@ -34,11 +34,5 @@ public class Movement : MonoBehaviour
         {
             rb.AddForce(0, down_force, 0);
         }
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        rb.velocity = new Vector3(0, 0, 0);
-        up *= -1;
     }
 }
