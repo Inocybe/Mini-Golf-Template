@@ -16,12 +16,6 @@ public class Movement : MonoBehaviour
     {
 
         Moving();
-        OnTriggerEnter(other);
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        up *= -1;
     }
 
     public void Moving()
@@ -33,6 +27,15 @@ public class Movement : MonoBehaviour
         else
         {
             rb.AddForce(0, down_force, 0);
+        }
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "Collider")
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+            up *= -1;
         }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Collider
+  - Moving Box
   layers:
   - Default
   - TransparentFX

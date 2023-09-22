@@ -56,10 +56,10 @@ extern void Hole_EndLevel_mFE18B4916E42AE8355E3EEB81AE4933C010D245C (void);
 extern void Hole__ctor_m464EC6EBCA819D563170896F40B198C5D638AED9 (void);
 // 0x00000016 System.Void Movement::FixedUpdate()
 extern void Movement_FixedUpdate_mBAFAFB0C3B305F3F3FCDE7E0AE3B61C89E84B6CC (void);
-// 0x00000017 System.Void Movement::OnTriggerEnter(UnityEngine.Collider)
-extern void Movement_OnTriggerEnter_m074C485AE6643EE2828A2D67A3DD0FADB788704C (void);
-// 0x00000018 System.Void Movement::Moving()
+// 0x00000017 System.Void Movement::Moving()
 extern void Movement_Moving_mAC413228BED43BF14FC15A8DA2E82CA81BE4FCDB (void);
+// 0x00000018 System.Void Movement::OnTriggerEnter(UnityEngine.Collider)
+extern void Movement_OnTriggerEnter_m074C485AE6643EE2828A2D67A3DD0FADB788704C (void);
 // 0x00000019 System.Void Movement::.ctor()
 extern void Movement__ctor_mCB72C1AD57256D73959D74FB86C5D0AA69EAE7ED (void);
 // 0x0000001A System.Void StartPoint::Start()
@@ -98,8 +98,8 @@ static Il2CppMethodPointer s_methodPointers[31] =
 	Hole_EndLevel_mFE18B4916E42AE8355E3EEB81AE4933C010D245C,
 	Hole__ctor_m464EC6EBCA819D563170896F40B198C5D638AED9,
 	Movement_FixedUpdate_mBAFAFB0C3B305F3F3FCDE7E0AE3B61C89E84B6CC,
-	Movement_OnTriggerEnter_m074C485AE6643EE2828A2D67A3DD0FADB788704C,
 	Movement_Moving_mAC413228BED43BF14FC15A8DA2E82CA81BE4FCDB,
+	Movement_OnTriggerEnter_m074C485AE6643EE2828A2D67A3DD0FADB788704C,
 	Movement__ctor_mCB72C1AD57256D73959D74FB86C5D0AA69EAE7ED,
 	StartPoint_Start_m54C3B56FDBD6886519A3A55F7A3DFCAC3C414740,
 	StartPoint_Update_mF301DBE9363D3042D7141889CA4C02E87B4DE11A,
@@ -132,8 +132,8 @@ static const int32_t s_InvokerIndices[31] =
 	5436,
 	5436,
 	5436,
-	4300,
 	5436,
+	4300,
 	5436,
 	5436,
 	5436,
