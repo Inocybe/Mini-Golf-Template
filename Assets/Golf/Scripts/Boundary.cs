@@ -5,15 +5,16 @@ using UnityEngine;
 public class Boundary : MonoBehaviour
 {
 
-    public Vector3 StartingPoint;
-    public Rigidbody ball;
+    public GameObject StartingPoint;
+    public Transform ball_transform;
+    public Rigidbody ball_rb;
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Ball")
         {
-            ball.velocity = new Vector3(0, 0, 0);
-            ball.position = StartingPoint;
+            ball_rb.velocity = new Vector3(0, 0, 0);
+            ball_transform.position = StartingPoint.transform.position; ;
         }
     }
 }

@@ -47,6 +47,8 @@ struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
 // BallManager
 struct BallManager_t81337400CCAB0A19AD4E3558C3BE320533A97E45;
+// Boundary
+struct Boundary_tEAAEA73D35E045EAD0C8C48B4BA633992588B5DC;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.Canvas
@@ -685,6 +687,17 @@ struct BallManager_t81337400CCAB0A19AD4E3558C3BE320533A97E45  : public MonoBehav
 	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___selectAction_6;
 };
 
+// Boundary
+struct Boundary_tEAAEA73D35E045EAD0C8C48B4BA633992588B5DC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject Boundary::StartingPoint
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___StartingPoint_4;
+	// UnityEngine.Transform Boundary::ball_transform
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___ball_transform_5;
+	// UnityEngine.Rigidbody Boundary::ball_rb
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___ball_rb_6;
+};
+
 // ClubHead
 struct ClubHead_t82DA0A3A35E1ED7C6456021D65CF48002531BCB6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -966,6 +979,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B68
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Void BallManager::MoveToBall()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallManager_MoveToBall_m8AC830E08B4ED0BDD29A028FA1F0578D8E018E27 (BallManager_t81337400CCAB0A19AD4E3558C3BE320533A97E45* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.Component::get_tag()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Component_get_tag_m7561A81116CAB82B8A459E934662BFC2039FB7EF (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rigidbody::set_velocity(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
 // System.Void ClubHead::SpawnClubHeadFollower()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClubHead_SpawnClubHeadFollower_m96C0A6FF7BA3F77F92603D2C9E6BA1ACB0218A2C (ClubHead_t82DA0A3A35E1ED7C6456021D65CF48002531BCB6* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<ClubHeadFollower>(T)
@@ -993,8 +1012,6 @@ inline StartPoint_t30A6F7661345EC3E8637E6D0C9B1ED1B7640B66F* Object_FindObjectOf
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(UnityEngine.Vector3,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Rigidbody::set_velocity(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Collision::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E (Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::CompareTag(System.String)
@@ -1015,10 +1032,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Movement_Moving_mAC413228BED43BF14FC15A8DA2E82CA81BE4FCDB (Movement_t7ED030E814A2C7E091389CFDABC85C6995DD35E7* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rigidbody::AddForce(System.Single,System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddForce_mFD97FC9DA828C1952D46D28C50B1D994B19895F6 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
-// System.String UnityEngine.Component::get_tag()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Component_get_tag_m7561A81116CAB82B8A459E934662BFC2039FB7EF (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
-// System.Boolean System.String::op_Equality(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
 // T UnityEngine.Object::FindObjectOfType<ClubHeadFollower>()
 inline ClubHeadFollower_t5BC9209C4183B9F6A518A0619AAD86BEDE71EE4A* Object_FindObjectOfType_TisClubHeadFollower_t5BC9209C4183B9F6A518A0619AAD86BEDE71EE4A_m0715215615E1FF714EC3E7E46F7E766F48466F58 (const RuntimeMethod* method)
 {
@@ -1218,6 +1231,71 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallManager_U3CStartU3Eb__3_0_mD2BE27A77
 	{
 		// selectAction.started += context => MoveToBall();
 		BallManager_MoveToBall_m8AC830E08B4ED0BDD29A028FA1F0578D8E018E27(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Boundary::OnTriggerExit(UnityEngine.Collider)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Boundary_OnTriggerExit_m7129FA8FA8E9B854B02B5A2523444ED23EBB06B2 (Boundary_tEAAEA73D35E045EAD0C8C48B4BA633992588B5DC* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___other0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (other.tag == "Ball")
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___other0;
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = Component_get_tag_m7561A81116CAB82B8A459E934662BFC2039FB7EF(L_0, NULL);
+		bool L_2;
+		L_2 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, _stringLiteralAF4FE737DB07A38DC7B9A34B4BA555906EC0EFA9, NULL);
+		if (!L_2)
+		{
+			goto IL_004c;
+		}
+	}
+	{
+		// ball_rb.velocity = new Vector3(0, 0, 0);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___ball_rb_6;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_4), (0.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_3, L_4, NULL);
+		// ball_transform.position = StartingPoint.transform.position; ;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___ball_transform_5;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___StartingPoint_4;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_7, NULL);
+		NullCheck(L_5);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_5, L_8, NULL);
+	}
+
+IL_004c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Boundary::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Boundary__ctor_mE45EE0A1FF481C174C7CF6C691D8CC72C3B9CCAB (Boundary_tEAAEA73D35E045EAD0C8C48B4BA633992588B5DC* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
