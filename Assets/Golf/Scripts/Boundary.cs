@@ -14,7 +14,7 @@ public class Boundary : MonoBehaviour
         if (other.tag == "Ball")
         {
             ball_rb.velocity = new Vector3(0, 0, 0);
-            ball_transform.position = StartingPoint.transform.position; ;
+            ball_transform.position = StartingPoint.transform.position;
         }
     }
 }

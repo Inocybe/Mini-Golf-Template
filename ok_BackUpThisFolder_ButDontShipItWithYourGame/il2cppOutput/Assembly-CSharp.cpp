@@ -1272,7 +1272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Boundary_OnTriggerExit_m7129FA8FA8E9B854
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_4), (0.0f), (0.0f), (0.0f), /*hidden argument*/NULL);
 		NullCheck(L_3);
 		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_3, L_4, NULL);
-		// ball_transform.position = StartingPoint.transform.position; ;
+		// ball_transform.position = StartingPoint.transform.position;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___ball_transform_5;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___StartingPoint_4;
 		NullCheck(L_6);
